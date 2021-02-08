@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15796329",
+      "name": "开机",
+      "font_class": "kaiji",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+// @import './iconfont/iconfont.css'
+//渐渐出现/退出
+.common_fade_inout {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+//滑动移动
+.common_slide_move {
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+//缩放移动
+.common_zoom_move {
+    transform: scale(0) translate(0, 0);
+    transform-origin: bottom center;
+    transition: transform 1s ease;
+}
+
+//视频缩放
+.common_video_box {
+    width: 100%;
+    height: 160vh;
+    position: relative;
+
+    .common_video_content {
+        width: 100%;
+        height: calc(100vh - 64px);
+        position: sticky;
+        top: 64px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main{
+            width: 100vw;
+            height: 41vw;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            width: 100%;
+            // height: 100%;
+        }
+
+        .common_video_model {
+            width: 100%;
+            height: calc(100% + 20px);
+            position: absolute;
+            top: -10px;
+            left: 0;
+            background-color: #ffffff;
+            clip-path: polygon(0% 0%, 0% 100%, 12% 100%, 12% 12%, 88% 12%, 88% 88%, 12% 88%, 12% 100%, 100% 100%, 100% 0%);
+            transition: clip-path 1.3s ease;
+        }
+    }
+
+}
+
+//底部导航
+.footer{
+    width: 100%;
+    .nav_list_box{
+        width: 100%;
+        height: 44px;
+        overflow: hidden;
+        transition: height .3s ease;
+        a{
+            font-size: 16px;
+            line-height: 16px;
+            text-decoration: none;
+        }
+        .nav_title{
+            width: 100%;
+            height: 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+            border-bottom: 1px solid #ececec;
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: 600;
+            .title{
+                font-size: 16px;
+                line-height: 16px;
+            }
+            .icon{
+                transition: transform .3s ease;
+            }
+            .rotate{
+                transform: rotate(-180deg);
+            }
+        }
+        .red{
+            color: #FF3737;
+        }
+        .nav_content{
+            width: 100%;
+            .list{
+                width: 100%;
+                height: 44px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 24px; 
+                color: #000000;
+                font-size: 16px;
+                line-height: 16px;
+                background-color: #FAFAFA;
+            }
+        }
+    }
+    .factory_intro{
+        width: 100%;
+        padding: 24px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #666666;
+    }
+}

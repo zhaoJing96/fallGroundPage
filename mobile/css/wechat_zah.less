@@ -1,0 +1,643 @@
+// 智安汇
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.zah_container {
+    width: 100%;
+    background-color: #ffffff;
+
+    .nav {
+        position: sticky;
+        width: 100%;
+        height: 44px;
+        background-color: #31363A;
+        z-index: 10;
+        top: 0;
+    }
+
+    // 头部-视频
+    .header {
+        width: 100%;
+        height: 264px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+
+        video {
+            width: 325px;
+            height: 177.5px;
+        }
+    }
+
+    // 功能概略
+    .ui_outline_box {
+        width: 100%;
+        height: 163.5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .outline_text {
+            width: 225px;
+
+            .title {
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: 600;
+            }
+
+            .txt {
+                color: #666666;
+                font-size: 13px;
+                line-height: 18px;
+                margin-top: 20px;
+            }
+        }
+
+        img {
+            width: 75px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+
+            &:nth-child(2) {
+                left: 0;
+            }
+
+            &:nth-child(3) {
+                right: 0;
+            }
+        }
+
+    }
+
+    // 功能介绍
+    .ui_function_box {
+        width: 100%;
+        padding: 0 32px 134px;
+        margin-top: 70px;
+        overflow: hidden;
+
+        .list {
+            width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 114px auto 0;
+
+            &:nth-child(1) {
+                margin-top: 0;
+
+            }
+
+            // 公共样式
+            .zah_introduce {
+                color: #000000;
+                width: 100%;
+
+                .txt {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .title {
+                    font-size: 22px;
+                    line-height: 28px;
+                    font-weight: 600;
+                }
+            }
+
+            .zah_imgBox {
+                margin-top: 48px;
+                text-align: center;
+            }
+
+            // 3D
+            .ui_zah_3DBox {
+                width: 300px;
+                height: 200px;
+                position: relative;
+
+                .ui_zah_3Dimg {
+                    &:nth-child(1) {
+                        width: 300px;
+                        height: 200px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 20px;
+                        height: 99px;
+                        position: absolute;
+                        top: 24px;
+                        left: 8px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 40px;
+                        height: 63px;
+                        position: absolute;
+                        top: 0;
+                        right: 8px;
+                    }
+
+                    &:nth-child(4) {
+                        width: 166px;
+                        height: 18px;
+                        position: absolute;
+                        bottom: -5px;
+                        left: calc(50% - 83px);
+                    }
+                }
+            }
+
+            // 项目
+            .ui_zah_projectBox {
+                width: 287px;
+                height: 264px;
+                position: relative;
+
+                img {
+                    position: absolute;
+
+                    &:nth-child(1) {
+                        width: 287px;
+                        height: 264px;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        width: 116px;
+                        height: 106px;
+                        top: 81px;
+                        right: -2px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ffffff;
+                    border-radius: 4px;
+
+                    &:nth-child(3) {
+                        width: 70px;
+                        height: 22px;
+                        background: #FFCB57;
+                        box-shadow: 0px 3px 6px 0px rgba(196, 97, 0, 0.15);
+                        font-size: 8px;
+                        line-height: 11px;
+                        top: -10.5px;
+                        left: 86px;
+                    }
+
+                    &:nth-child(4) {
+                        width: 56px;
+                        height: 18px;
+                        background: #7A9EFF;
+                        box-shadow: 0px 3px 6px 0px rgba(0, 145, 255, 0.15);
+                        font-size: 7px;
+                        line-height: 10px;
+                        top: 2.5px;
+                        left: 175px;
+                    }
+
+                    &:nth-child(5) {
+                        width: 66px;
+                        height: 22px;
+                        background: #5DDCC0;
+                        box-shadow: 0px 3px 6px 0px rgba(68, 215, 182, 0.25);
+                        font-size: 8px;
+                        line-height: 11px;
+                        top: 189px;
+                        left: 3px;
+                    }
+                }
+            }
+
+            // 成员管理
+            .ui_zah_memberBox {
+                width: 300px;
+                height: 270px;
+                position: relative;
+
+                .ui_zah_memberimg {
+                    &:nth-child(1) {
+                        width: 300px;
+                        height: 270px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 66px;
+                        height: 113px;
+                        position: absolute;
+                        top: 66px;
+                        right: 29px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 140px;
+                        height: 107px;
+                        position: absolute;
+                        top: 120px;
+                        left: 12px;
+                    }
+                }
+            }
+        }
+
+        // 危险区域
+        .ui_zah_dangerBox {
+            width: 302px;
+            height: 225px;
+            position: relative;
+
+            img {
+                position: absolute;
+
+                &:nth-child(1) {
+                    width: 302px;
+                    height: 225px;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:nth-child(2) {
+                    width: 145px;
+                    height: 129px;
+                    top: 98px;
+                    left: 128px;
+                }
+            }
+
+            span {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                border-radius: 4px;
+
+                &:nth-child(3) {
+                    width: 66px;
+                    height: 18px;
+                    background: #FF8491;
+                    box-shadow: 0px 3px 6px 0px rgba(198, 0, 0, 0.15);
+                    font-size: 7px;
+                    line-height: 10px;
+                    top: 6px;
+                    left: 41.5px;
+                }
+
+                &:nth-child(4) {
+                    width: 32px;
+                    height: 32px;
+                    background: #DB7BE7;
+                    box-shadow: 0px 3px 6px 0px rgba(196, 26, 221, 0.15);
+                    border-radius: 18px;
+                    font-size: 8.5px;
+                    line-height: 9px;
+                    top: 24.5px;
+                    right: 49px;
+                }
+
+                &:nth-child(5) {
+                    width: 22px;
+                    height: 22px;
+                    background: #5DDCC0;
+                    box-shadow: 0px 3px 6px 0px rgba(0, 183, 196, 0.15);
+                    border-radius: 15px;
+                    font-size: 7.5px;
+                    line-height: 9px;
+                    bottom: 63.5px;
+                    left: 13.5px;
+                }
+            }
+        }
+
+        // 报警处理
+        .ui_zah_warningBox {
+            width: 300px;
+            height: 245px;
+            position: relative;
+
+            img {
+                width: 300px;
+                height: 245px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            span {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                border-radius: 4px;
+
+                &:nth-child(2) {
+                    width: 70px;
+                    height: 24px;
+                    top: -21.5px;
+                    left: 91px;
+                    font-size: 9px;
+                    background: #FFCB57;
+                    box-shadow: 0px 3px 6px 0px rgba(196, 97, 0, 0.15);
+                    z-index: 2;
+                }
+
+                &:nth-child(3) {
+                    width: 49px;
+                    height: 17.5px;
+                    top: -9.5px;
+                    left: 49.5px;
+                    font-size: 7px;
+                    background: #DC7CED;
+                    box-shadow: 0px 3px 6px 0px rgba(164, 26, 199, 0.25);
+                }
+
+                &:nth-child(4) {
+                    width: 42px;
+                    height: 16px;
+                    top: 13px;
+                    right: 66.5px;
+                    font-size: 6px;
+                    background: #A984FF;
+                    box-shadow: 0px 3px 6px 0px rgba(49, 0, 140, 0.15);
+                }
+
+                &:nth-child(5) {
+                    width: 56px;
+                    height: 20px;
+                    top: 101px;
+                    left: 94px;
+                    font-size: 7px;
+                    background: #FF8491;
+                    box-shadow: 0px 3px 6px 0px rgba(255, 63, 63, 0.15);
+                }
+
+                &:nth-child(6) {
+                    width: 52px;
+                    height: 22px;
+                    top: 153px;
+                    right: 10px;
+                    font-size: 7px;
+                    background: #5DDCC0;
+                    box-shadow: 0px 3px 6px 0px rgba(68, 215, 182, 0.25);
+                }
+
+                &:nth-child(7) {
+                    width: 66px;
+                    height: 22px;
+                    bottom: 10px;
+                    left: 44px;
+                    font-size: 8px;
+                    background: #7A9EFF;
+                    box-shadow: 0px 3px 6px 0px rgba(68, 100, 215, 0.25);
+                }
+            }
+        }
+
+        // 旁站
+        .ui_zah_sideStandBox {
+            width: 300px;
+            height: 212px;
+            position: relative;
+
+            img {
+                position: absolute;
+
+                &:nth-child(1) {
+                    width: 300px;
+                    height: 212px;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:nth-child(2) {
+                    width: 32px;
+                    height: 33px;
+                    top: -16px;
+                    left: 55px;
+                }
+
+                &:nth-child(3) {
+                    width: 32px;
+                    height: 28px;
+                    top: 10.5px;
+                    left: 153.5px;
+                }
+
+                &:nth-child(4) {
+                    width: 32px;
+                    height: 28px;
+                    top: -1.5px;
+                    left: 121.5px;
+                }
+
+                &:nth-child(5) {
+                    width: 32px;
+                    height: 28px;
+                    top: 44px;
+                    left: 8px;
+                }
+
+                &:nth-child(6) {
+                    width: 40px;
+                    height: 27px;
+                    left: 191.5px;
+                    bottom: 49px;
+                }
+
+                &:nth-child(7) {
+                    width: 32px;
+                    height: 24px;
+                    left: 105.5px;
+                    bottom: 49px;
+                }
+
+                &:nth-child(8) {
+                    width: 38px;
+                    height: 27px;
+                    left: 79.5px;
+                    bottom: 16.5px;
+                }
+
+                &:nth-child(9) {
+                    width: 40px;
+                    height: 31px;
+                    left: 149.5px;
+                    bottom: 11.5px;
+                }
+            }
+        }
+
+        // 智能巡检
+        .ui_zah_inspectBox {
+            width: 287px;
+            height: 266.5px;
+            position: relative;
+
+            img {
+                position: absolute;
+
+                &:nth-child(1) {
+                    width: 287px;
+                    height: 266.5px;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:nth-child(2) {
+                    width: 54px;
+                    height: 57px;
+                    top: 18.5px;
+                    left: 144.5px;
+                }
+
+                &:nth-child(3) {
+                    width: 63.5px;
+                    height: 71px;
+                    left: 1.5px;
+                    bottom: -6.5px;
+                }
+
+                &:nth-child(4) {
+                    width: 52.5px;
+                    height: 86.5px;
+                    left: 43px;
+                    bottom: 6.5px;
+                }
+
+                &:nth-child(5) {
+                    width: 22.5px;
+                    height: 27px;
+                    left: 88.5px;
+                    bottom: 92.5px;
+                }
+
+                &:nth-child(6) {
+                    width: 574px;
+                    height: 534px;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        // 统计
+        .ui_zah_statisticsBox {
+            width: 268px;
+            height: 184px;
+            position: relative;
+
+            img {
+                position: absolute;
+
+                &:nth-child(1) {
+                    width: 268px;
+                    height: 184px;
+                    top: 0;
+                    left: 0;
+                }
+
+                &:nth-child(2) {
+                    width: 224px;
+                    height: 86.4px;
+                    top: 18px;
+                    right: -10.5px;
+                }
+
+                &:nth-child(3) {
+                    width: 48px;
+                    height: 48px;
+                    left: -16.5px;
+                    top: 83.5px;
+                }
+            }
+
+            span {
+                position: absolute;
+            }
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+                border-radius: 4px;
+
+                &:nth-child(4) {
+                    width: 70px;
+                    height: 22px;
+                    background: #FFCB57;
+                    box-shadow: 0px 3px 6px 0px rgba(196, 97, 0, 0.15);
+                    font-size: 8px;
+                    line-height: 11px;
+                    top: -30px;
+                    left: 123px;
+                }
+
+                &:nth-child(5) {
+                    width: 56px;
+                    height: 18px;
+                    background: #7A9EFF;
+                    box-shadow: 0px 3px 6px 0px rgba(0, 145, 255, 0.15);
+                    font-size: 7px;
+                    line-height: 10px;
+                    top: -12px;
+                    left: 192px;
+                }
+
+                &:nth-child(6) {
+                    width: 66px;
+                    height: 22px;
+                    background: #FF8491;
+                    box-shadow: 0px 3px 6px 0px rgba(255, 63, 63, 0.15);
+                    font-size: 8px;
+                    line-height: 11px;
+                    left: 20px;
+                    bottom: -12.5px;
+                }
+            }
+        }
+    }
+
+    // 底部文案页面
+    .zah_info_box {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../img/zahWechat/img_zhianhui.png');
+        background-size: 100% 100%;
+
+        .zah_info_txt {
+            color: #FFFFFF;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+    }
+
+    // 底部
+    .footer {}
+}

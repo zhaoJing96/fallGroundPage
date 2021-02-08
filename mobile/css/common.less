@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 文字上移动效
+.ui_common_word {
+    .txt {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: .8s ease;
+    }
+
+    .title {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: .8s ease;
+    }
+}
+
+// 左侧移入动效
+.ui_common_left_inout {
+    transform: translate(-100px, 0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+// 右侧移入动效
+.ui_common_right_inout {
+    transform: translate(100px, 0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+// 淡入淡出动效
+.ui_common_opacity_inout {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+// 缩放动效
+.ui_common_scale_inout {
+    transform: scale(0);
+    transition: all 1s ease;
+}
